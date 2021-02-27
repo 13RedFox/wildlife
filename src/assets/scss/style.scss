@@ -1,0 +1,73 @@
+@import "vars";
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    background-color: $black;
+    font-family: $main-font;
+    font-size: $s23;
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section, header, footer {
+    padding: 0 15px;
+}
+
+@media (min-width: 575.98px){
+    section, header, footer {
+        padding: 0 calc(50vw - 270px);
+    }
+}
+
+@media (min-width: 767.98px){
+    section, header, footer {
+        padding: 0 calc(50vw - 360px);
+    }
+}
+
+@media (min-width: 991.98px) {
+    section, header, footer {
+        padding: 0 calc(50vw - 480px);
+    }
+}
+
+@media (min-width: 1199.98px){
+    section, header, footer {
+        padding: 0 calc(50vw - 590px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//  Blocks:
+@import "blocks/header";

@@ -1,0 +1,100 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+html,
+body {
+  height: 100vh; }
+
+body {
+  position: relative;
+  background-color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.3rem;
+  color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+section, header, footer {
+  padding: 0 15px; }
+
+@media (min-width: 575.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 270px); } }
+
+@media (min-width: 767.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 360px); } }
+
+@media (min-width: 991.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 480px); } }
+
+@media (min-width: 1199.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 590px); } }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem; }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.2rem;
+    color: #F7F7F7;
+    text-transform: uppercase;
+    transition: color .3s ease; }
+    .header__logo:hover {
+      color: #CD6326; }
+    .header__logo:active {
+      color: #E39128; }
+    .header__logo img {
+      margin-right: 1.5rem; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__nav-item {
+      margin-right: 6rem; }
+      .header__nav-item:last-child {
+        margin-right: 0; }
+    .header__nav-link {
+      display: block;
+      color: #F7F7F7;
+      text-transform: capitalize;
+      transition: color .3s ease; }
+      .header__nav-link:hover {
+        color: #CD6326; }
+      .header__nav-link:active {
+        color: #E39128; }
+    .header__nav .sign-in {
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      padding: 0 2.3rem;
+      border: 2px solid #CD6326;
+      border-radius: 5px;
+      transition: all .3s ease; }
+      .header__nav .sign-in:hover {
+        background-color: #CD6326;
+        color: #F7F7F7; }
+      .header__nav .sign-in:active {
+        background-color: #E39128;
+        color: #F7F7F7; }

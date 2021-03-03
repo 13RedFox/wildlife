@@ -1,0 +1,123 @@
+.latest {
+  padding: 12rem 0 5rem;
+  background: $latest-bg;
+  text-align: center;
+
+  &__title {
+    font-size: $s48;
+    font-weight: 400;
+    line-height: 72px;
+    color: $font-dark;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: $s24;
+    font-weight: 400;
+    line-height: 36px;
+    color: $font-grey;
+    margin-bottom: 12rem;
+  }
+
+  &__slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &-card {
+      position: relative;
+      width: 30rem;
+      height: 36rem;
+      margin-right: 6rem;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 30px #000;
+      }
+      &:hover h3 {
+        color: $orange-main;
+      }
+      &:hover p {
+        color: $orange-light;
+      }
+
+      &:nth-child(1) {
+        background: url("./../images/card-1.jpg") center / cover, no-repeat;
+      }
+      &:nth-child(2) {
+        background: url("./../images/card-2.jpg") center / cover, no-repeat;
+      }
+      &:nth-child(3) {
+        background: url("./../images/card-3.jpg") center / cover, no-repeat;
+        margin-right: 0;
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 7.7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: $s22;
+        font-weight: 400;
+        line-height: 36px;
+        color: $font-light;
+        transition: color .3s ease-in-out;
+
+      }
+
+      p {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: $s17;
+        font-weight: 400;
+        line-height: 27px;
+        color: $font-light;
+        transition: color .3s ease-in-out;
+      }
+    }
+
+    .arrow {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 50%;
+      transition: all .3s ease;
+      cursor: pointer;
+    }
+
+    .arrow__left {
+      border-top: 6px solid $font-grey;
+      border-left: 6px solid $font-grey;
+      left: 1.8rem;
+      transform: rotate(-45deg) translateY(-50%);
+      &:hover {
+        border-top-color: $orange-main;
+        border-left-color: $orange-main;
+      }
+      &:active {
+        border-top-color: $orange-light;
+        border-left-color: $orange-light;
+      }
+    }
+    .arrow__right {
+      border-top: 5px solid $font-grey;
+      border-right: 5px solid $font-grey;
+      right: 1.8rem;
+      transform: rotate(45deg) translateY(-50%);
+      &:hover {
+        border-top-color: $orange-main;
+        border-right-color: $orange-main;
+      }
+      &:active {
+        border-top-color: $orange-light;
+        border-right-color: $orange-light;
+      }
+    }
+  }
+}

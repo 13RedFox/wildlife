@@ -1,0 +1,54 @@
+.notified {
+  padding-top: 19rem;
+  padding-bottom: 24rem;
+  background: $latest-bg;
+
+  &__title {
+    font-size: $s27;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: $font-dark;
+    margin-bottom: 6rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-email {
+      width: 540px;
+      height: 60px;
+      font-family: $second-font;
+      font-size: $s23;
+      line-height: 27px;
+      border: 1px solid $font-grey;
+      border-right-color: transparent;
+      background: transparent;
+      color: $font-grey;
+      padding-left: 1.8rem;
+      outline: none;
+    }
+    &-submit {
+      width: 120px;
+      height: 60px;
+      background: $orange-main;
+      font-family: $second-font;
+      font-size: $s23;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: center;
+      color: $font-light;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color .3s ease-in-out;
+      &:hover {
+        background-color: $orange-light;
+      }
+      &:active {
+        background-color: $orange-dark;
+      }
+    }
+  }
+}

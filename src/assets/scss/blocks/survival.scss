@@ -1,0 +1,45 @@
+.survival {
+  padding-top: 18rem;
+
+  &__title {
+    font-size: $s48;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: $orange-main;
+    text-transform: capitalize;
+    margin-bottom: 5.1rem;
+  }
+
+  &__text {
+    max-width: 27.4rem;
+    font-size: $s18;
+    line-height: 27px;
+    font-weight: 400;
+    color: $font-light;
+    margin-bottom: 4.8rem;
+  }
+
+  &__btn {
+    width: 16rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $second-font;
+    font-size: $s23;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: $font-light;
+    background: $orange-main;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+    &:hover {
+      background: $orange-light;
+    }
+    &:active {
+      background: $orange-dark;
+    }
+  }
+}

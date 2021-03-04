@@ -1,0 +1,82 @@
+.footer {
+  position: relative;
+  min-height: 35.9rem;
+  background-color: $footer-bg;
+
+  &__bg {
+    min-height: 35.9rem;
+    background: url("./../images/footer_bg.jpg") center / cover, no-repeat;
+    z-index: 0;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 35.9rem;
+  }
+
+  &__nav {
+    width: 49rem;
+
+    &-list {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 1.5rem;
+    }
+
+    &-item:nth-child(1) {
+      margin-right: 8.5rem;
+    }
+
+    &-item:nth-child(2) {
+      margin-right: 9rem;
+    }
+
+    &-link {
+      display: block;
+      font-weight: 400;
+      line-height: 60px;
+      color: $font-light;
+      transition: color .3s ease-in-out;
+      &:hover {
+        color: $orange-main;
+      }
+      &:active {
+        color: $orange-light;
+      }
+    }
+  }
+
+  &__social {
+    min-width: 24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $s32;
+      background: $font-light;
+      border-radius: 50%;
+      color: $green-dark;
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: $orange-main;
+      }
+      &:active {
+        background-color: $orange-light;
+      }
+    }
+
+    &-link:hover .fab{
+      color: $font-light;
+    }
+  }
+}

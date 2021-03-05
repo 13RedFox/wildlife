@@ -1,5 +1,5 @@
 .latest {
-  padding: 12rem 0 5rem;
+  padding: 12.1rem 0 5rem;
   background: $latest-bg;
   text-align: center;
 
@@ -17,6 +17,10 @@
     line-height: 36px;
     color: $font-grey;
     margin-bottom: 12rem;
+  }
+
+  &__slider-wrapper {
+    //width: 1200px;
   }
 
   &__slider {

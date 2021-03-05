@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -18,40 +19,52 @@
 </head>
 <body>
 
-    <header class="header">
-      <div class="container">
-        <div class="header__bg main__bg"></div>
+    <div class="first-screen">
+      <header class="header">
+        <div class="container">
     
-        <nav class="header__nav">
-          <a href="/" class="main__logo">
-            <img src="./assets/images/logo.svg" alt="Logo"> wildlife</a>
+          <nav class="header__nav">
+            <a href="/" class="main__logo">
+              <img src="./assets/images/logo.svg" alt="Logo"> wildlife</a>
     
-          <ul class="header__menu">
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Blog</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Contacts</a></li>
-            <li
-                class="header__menu-item"><a href="#"
-                                             class="header__menu-link"><i class="fas fa-search"></i></a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link sign-in">Sign in</a></li>
-          </ul>
-        </nav>
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Blog</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Contacts</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link sign-in">Sign in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     
-        <section class="survival">
+      <section class="survival">
+        <div class="container survival__wrapper">
+          <div class="survival__bg main__bg"></div>
           <h2 class="survival__title">survival</h2>
           <p class="survival__text">What this means is that we exist to help protect our environment and do in numbers of
             ways. You can save the planet by donation.</p>
           <a href="#" class="survival__btn">donate</a>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
     
-    </header>
 
     <section class="latest">
       <div class="container">
         <h2 class="latest__title">Latest articles</h2>
         <p class="latest__text">Breaking news from the wild</p>
     
-        <div class="latest__slider">
+        <div class="latest__slider ">
           <div class="latest__slider-card">
             <h3>Deer</h3>
             <p>Naturalist investigation</p>
@@ -67,6 +80,7 @@
           <div class="arrow arrow__left"></div>
           <div class="arrow arrow__right"></div>
         </div>
+    
       </div>
     </section><div class="notified">
       <div class="container">
@@ -100,25 +114,26 @@
         <ul class="footer__social">
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <i class="fab fa-facebook-f"></i>
+              <img src="./assets/images/facebook.svg" alt="Facebook">
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <i class="fab fa-instagram"></i>
+              <img src="./assets/images/instagram.svg" alt="Instagram">
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <i class="fab fa-pinterest-p"></i>
+              <img src="./assets/images/pinteres.svg" alt="Pinterest">
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <i class="fab fa-telegram-plane"></i>
+              <img src="./assets/images/telegram.svg" alt="Telegram">
             </a>
           </li>
         </ul>
+    
       </div>
     </footer>
 

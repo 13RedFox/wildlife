@@ -41,9 +41,11 @@
       line-height: 60px;
       color: $font-light;
       transition: color .3s ease-in-out;
+
       &:hover {
         color: $orange-main;
       }
+
       &:active {
         color: $orange-light;
       }
@@ -67,16 +69,14 @@
       border-radius: 50%;
       color: $green-dark;
       transition: all .3s ease-in-out;
+
       &:hover {
         background-color: $orange-main;
       }
+
       &:active {
         background-color: $orange-light;
       }
-    }
-
-    &-link:hover .fab{
-      color: $font-light;
     }
   }
 }

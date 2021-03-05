@@ -25,6 +25,9 @@ a {
 ul {
   list-style: none; }
 
+.first-screen {
+  position: relative; }
+
 .container {
   position: relative;
   max-width: 1200px;
@@ -55,24 +58,22 @@ ul {
     margin-right: 1.5rem; }
 
 .header {
-  position: relative;
-  min-height: 78rem;
-  background: #02160b;
-  padding-top: 2rem;
-  z-index: 0; }
-  .header__bg {
-    height: 780px;
-    top: -2rem;
-    background: url("./../images/header_bg.jpg") center/cover, no-repeat; }
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  z-index: 2;
+  transition: top .3s ease-in-out; }
+  .header.transparent {
+    background: rgba(2, 22, 11, 0.8);
+    box-shadow: 0 5px 20px #02160b; }
   .header__nav {
-    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 1; }
+    align-items: center; }
   .header__menu {
     width: 480px;
     display: flex;
@@ -107,7 +108,18 @@ ul {
         color: #F7F7F7; }
 
 .survival {
-  padding-top: 18rem; }
+  min-height: 77.9rem;
+  background: #02160b;
+  z-index: 1; }
+  .survival__bg {
+    height: 77.9rem;
+    top: 0;
+    background: url("./../images/header_bg.jpg") center/cover, no-repeat;
+    z-index: 0; }
+  .survival__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .survival__title {
     font-size: 4.8rem;
     font-weight: 400;
@@ -115,14 +127,17 @@ ul {
     letter-spacing: 2px;
     color: #CD6326;
     text-transform: capitalize;
-    margin-bottom: 5.1rem; }
+    padding-top: 20.1rem;
+    margin-bottom: 5.1rem;
+    z-index: 1; }
   .survival__text {
     max-width: 27.4rem;
     font-size: 1.8rem;
     line-height: 27px;
     font-weight: 400;
     color: #F7F7F7;
-    margin-bottom: 4.8rem; }
+    margin-bottom: 4.8rem;
+    z-index: 1; }
   .survival__btn {
     width: 16rem;
     height: 6rem;
@@ -137,6 +152,7 @@ ul {
     color: #F7F7F7;
     background: #CD6326;
     border-radius: 5px;
+    z-index: 1;
     transition: background-color .3s ease; }
     .survival__btn:hover {
       background: #E39128; }
@@ -144,7 +160,7 @@ ul {
       background: #8F5613; }
 
 .latest {
-  padding: 12rem 0 5rem;
+  padding: 12.1rem 0 5rem;
   background: #cccccc;
   text-align: center; }
   .latest__title {
@@ -337,5 +353,3 @@ ul {
         background-color: #CD6326; }
       .footer__social-link:active {
         background-color: #E39128; }
-    .footer__social-link:hover .fab {
-      color: #F7F7F7; }

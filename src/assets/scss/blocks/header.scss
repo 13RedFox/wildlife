@@ -34,33 +34,56 @@
     }
 
     &-link {
-      display: block;
+      display: flex;
+      align-items: center;
       color: $font-light;
-      transition: color .3s ease;
+      transition: all .3s ease;
       &:hover {
         color: $orange-main;
+        path {
+          fill: $orange-main;
+        }
       }
       &:active {
         color: $orange-light;
+        path {
+          fill: $orange-light;
+        }
       }
+    }
+
+    &-link path {
+      transition: all .3s ease;
     }
 
     .sign-in {
       display: flex;
       align-items: center;
+      width: 12rem;
       height: 5rem;
+      background: transparent;
       font-family: $second-font;
+      font-size: $s23;
       padding: 0 2.3rem;
       border: 2px solid $orange-main;
       border-radius: 5px;
+      cursor: pointer;
       transition: all .3s ease;
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $orange-main;
         color: $font-light;
       }
       &:active {
         background-color: $orange-light;
         color: $font-light;
+        border: 2px solid transparent;
+        outline: none;
+      }
+
+      &:focus {
+        border: 2px solid transparent;
+        outline: none;
       }
     }
   }

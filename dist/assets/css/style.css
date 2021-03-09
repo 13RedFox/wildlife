@@ -31,6 +31,10 @@ ul {
     list-style: none;
 }
 
+.first-screen {
+    position: relative;
+}
+
 .container {
     position: relative;
     max-width: 1200px;
@@ -73,31 +77,30 @@ ul {
 }
 
 .header {
-    position: relative;
-    min-height: 78rem;
-    background: #02160b;
-    padding-top: 2rem;
-    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    top: 2rem;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+    transition: top .3s ease-in-out;
 }
 
-.header__bg {
-    height: 780px;
-    top: -2rem;
-    background: url("./../images/header_bg.jpg") center/cover, no-repeat;
+.header.transparent {
+    background: rgba(2, 22, 11, 0.8);
+    box-shadow: 0 5px 20px #02160b;
 }
 
 .header__nav {
-    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 1;
 }
 
 .header__menu {
@@ -119,17 +122,32 @@ ul {
 }
 
 .header__menu-link {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     color: #F7F7F7;
-    transition: color .3s ease;
+    transition: all .3s ease;
 }
 
 .header__menu-link:hover {
     color: #CD6326;
 }
 
+.header__menu-link:hover path {
+    fill: #CD6326;
+}
+
 .header__menu-link:active {
     color: #E39128;
+}
+
+.header__menu-link:active path {
+    fill: #E39128;
+}
+
+.header__menu-link path {
+    transition: all .3s ease;
 }
 
 .header__menu .sign-in {
@@ -137,15 +155,19 @@ ul {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    width: 12rem;
     height: 5rem;
+    background: transparent;
     font-family: "Roboto", sans-serif;
+    font-size: 2.3rem;
     padding: 0 2.3rem;
     border: 2px solid #CD6326;
     border-radius: 5px;
+    cursor: pointer;
     transition: all .3s ease;
 }
 
-.header__menu .sign-in:hover {
+.header__menu .sign-in:hover, .header__menu .sign-in:focus {
     background-color: #CD6326;
     color: #F7F7F7;
 }
@@ -153,10 +175,35 @@ ul {
 .header__menu .sign-in:active {
     background-color: #E39128;
     color: #F7F7F7;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.header__menu .sign-in:focus {
+    border: 2px solid transparent;
+    outline: none;
 }
 
 .survival {
-    padding-top: 18rem;
+    min-height: 77.9rem;
+    background: #02160b;
+    z-index: 1;
+}
+
+.survival__bg {
+    height: 77.9rem;
+    top: 0;
+    background: url("./../images/header_bg.jpg") center/cover, no-repeat;
+    z-index: 0;
+}
+
+.survival__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .survival__title {
@@ -166,7 +213,9 @@ ul {
     letter-spacing: 2px;
     color: #CD6326;
     text-transform: capitalize;
+    padding-top: 20.1rem;
     margin-bottom: 5.1rem;
+    z-index: 1;
 }
 
 .survival__text {
@@ -176,6 +225,7 @@ ul {
     font-weight: 400;
     color: #F7F7F7;
     margin-bottom: 4.8rem;
+    z-index: 1;
 }
 
 .survival__btn {
@@ -195,6 +245,7 @@ ul {
     color: #F7F7F7;
     background: #CD6326;
     border-radius: 5px;
+    z-index: 1;
     transition: background-color .3s ease;
 }
 
@@ -207,7 +258,7 @@ ul {
 }
 
 .latest {
-    padding: 12rem 0 5rem;
+    padding: 12.1rem 0 5rem;
     background: #cccccc;
     text-align: center;
 }
@@ -500,8 +551,4 @@ ul {
 
 .footer__social-link:active {
     background-color: #E39128;
-}
-
-.footer__social-link:hover .fab {
-    color: #F7F7F7;
 }

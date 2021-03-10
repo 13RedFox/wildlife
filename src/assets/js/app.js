@@ -1,5 +1,6 @@
 'use strict';
-const header = document.querySelector('.header');
+const header = document.querySelector('.header'),
+			sendForm = document.querySelector('.notified__form-submit');
 
 window.addEventListener('scroll', function () {
 	let scrollPos = window.scrollY;
@@ -22,3 +23,7 @@ const swiper = new Swiper('.latest__slider', {
 		prevEl: '.arrow__left',
 	},
 });
+
+sendForm.addEventListener('click', function (e) {
+	e.preventDefault();
+})

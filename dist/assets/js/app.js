@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nconst header = document.querySelector('.header');\r\n\r\nwindow.addEventListener('scroll', function () {\r\n\tlet scrollPos = window.scrollY;\r\n\r\n\tif (scrollPos > 0) {\r\n\t\theader.classList.add('transparent');\r\n\t\theader.style.top = '0';\r\n\t} else {\r\n\t\theader.classList.remove('transparent');\r\n\t\theader.style.top = '2rem';\r\n\t}\r\n});\r\n\r\nconst swiper = new Swiper('.latest__slider', {\r\n\tslidesPerView: 3,\r\n\tspaceBetween: 60,\r\n\tloop: true,\r\n\tnavigation: {\r\n\t\tnextEl: '.arrow__right',\r\n\t\tprevEl: '.arrow__left',\r\n\t},\r\n});\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("\r\nconst header = document.querySelector('.header'),\r\n\t\t\tsendForm = document.querySelector('.notified__form-submit');\r\n\r\nwindow.addEventListener('scroll', function () {\r\n\tlet scrollPos = window.scrollY;\r\n\r\n\tif (scrollPos > 0) {\r\n\t\theader.classList.add('transparent');\r\n\t\theader.style.top = '0';\r\n\t} else {\r\n\t\theader.classList.remove('transparent');\r\n\t\theader.style.top = '2rem';\r\n\t}\r\n});\r\n\r\nconst swiper = new Swiper('.latest__slider', {\r\n\tslidesPerView: 3,\r\n\tspaceBetween: 60,\r\n\tloop: true,\r\n\tnavigation: {\r\n\t\tnextEl: '.arrow__right',\r\n\t\tprevEl: '.arrow__left',\r\n\t},\r\n});\r\n\r\nsendForm.addEventListener('click', function (e) {\r\n\te.preventDefault();\r\n})\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ })
 

@@ -204,6 +204,7 @@ ul {
       width: 30rem !important;
       height: 36rem;
       margin-right: 6rem;
+      cursor: pointer;
       transition: all .3s ease-in-out; }
       .latest__slider-card:hover:after {
         content: '';
@@ -263,13 +264,14 @@ ul {
       outline: none; }
     .latest .arrow__left:active {
       border-top-color: #E39128;
-      border-left-color: #E39128; }
+      border-left-color: #E39128;
+      outline: none; }
   .latest .arrow__right {
     border-top: 5px solid #666666;
     border-right: 5px solid #666666;
     right: 19.4%;
     transform: rotate(45deg) translateY(-50%); }
-    .latest .arrow__right:hover {
+    .latest .arrow__right:hover, .latest .arrow__right:focus {
       border-top-color: #CD6326;
       border-right-color: #CD6326;
       outline: none; }

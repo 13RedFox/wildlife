@@ -34,6 +34,7 @@
       width: 30rem !important;
       height: 36rem;
       margin-right: 6rem;
+      cursor: pointer;
       transition: all .3s ease-in-out;
 
       &:hover:after {
@@ -110,6 +111,7 @@
     &:active {
       border-top-color: $orange-light;
       border-left-color: $orange-light;
+      outline: none;
 
     }
   }
@@ -118,7 +120,8 @@
     border-right: 5px solid $font-grey;
     right: 19.4%;
     transform: rotate(45deg) translateY(-50%);
-    &:hover {
+    &:hover,
+    &:focus{
       border-top-color: $orange-main;
       border-right-color: $orange-main;
       outline: none;
@@ -126,6 +129,7 @@
     &:active {
       border-top-color: $orange-light;
       border-right-color: $orange-light;
+
     }
   }
 }

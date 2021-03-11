@@ -173,7 +173,7 @@ ul {
 }
 
 .header__menu .sign-in:active {
-    background-color: #E39128;
+    background-color: #8F5613;
     color: #F7F7F7;
     border: 2px solid transparent;
     outline: none;
@@ -296,6 +296,7 @@ ul {
     width: 30rem !important;
     height: 36rem;
     margin-right: 6rem;
+    cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
@@ -377,6 +378,7 @@ ul {
 .latest .arrow__left:active {
     border-top-color: #E39128;
     border-left-color: #E39128;
+    outline: none;
 }
 
 .latest .arrow__right {
@@ -387,7 +389,7 @@ ul {
     transform: rotate(45deg) translateY(-50%);
 }
 
-.latest .arrow__right:hover {
+.latest .arrow__right:hover, .latest .arrow__right:focus {
     border-top-color: #CD6326;
     border-right-color: #CD6326;
     outline: none;

@@ -57,6 +57,9 @@ ul {
   .main__logo img {
     margin-right: 1.5rem; }
 
+.main__title {
+  display: none; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -115,7 +118,7 @@ ul {
         background-color: #CD6326;
         color: #F7F7F7; }
       .header__menu .sign-in:active {
-        background-color: #E39128;
+        background-color: #8F5613;
         color: #F7F7F7;
         border: 2px solid transparent;
         outline: none; }

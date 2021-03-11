@@ -74,6 +74,9 @@ ul {
     margin-right: 1.5rem;
   }
 }
+.main__title {
+  display: none;
+}
 
 //  Blocks:
 @import "blocks/header";

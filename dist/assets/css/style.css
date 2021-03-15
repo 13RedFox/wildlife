@@ -76,6 +76,10 @@ ul {
     margin-right: 1.5rem;
 }
 
+.main__title {
+    display: none;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -300,6 +304,10 @@ ul {
     transition: all .3s ease-in-out;
 }
 
+.latest__slider-card:hover {
+    box-shadow: 0rem 0rem 1rem #000000;
+}
+
 .latest__slider-card:hover:after {
     content: '';
     display: block;
@@ -355,7 +363,7 @@ ul {
     width: 3rem;
     height: 3rem;
     position: absolute;
-    top: 67%;
+    top: 66%;
     transition: all .3s ease;
     cursor: pointer;
     z-index: 1;
@@ -364,7 +372,7 @@ ul {
 .latest .arrow__left {
     border-top: 6px solid #666666;
     border-left: 6px solid #666666;
-    left: 19.4%;
+    left: 2rem;
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateY(-50%);
 }
@@ -384,7 +392,7 @@ ul {
 .latest .arrow__right {
     border-top: 5px solid #666666;
     border-right: 5px solid #666666;
-    right: 19.4%;
+    right: 2rem;
     -webkit-transform: rotate(45deg) translateY(-50%);
     transform: rotate(45deg) translateY(-50%);
 }
@@ -434,7 +442,7 @@ ul {
     border-right-color: transparent;
     background: transparent;
     color: #666666;
-    padding-left: 1.8rem;
+    padding-left: 1.5rem;
     outline: none;
 }
 
@@ -555,4 +563,20 @@ ul {
 
 .footer__social-link:active {
     background-color: #E39128;
+}
+
+.footer__social .facebook {
+    background: #F7F7F7 url("./../images/facebook.svg") center/1.5rem no-repeat;
+}
+
+.footer__social .instagram {
+    background: #F7F7F7 url("./../images/instagram.svg") center/3rem no-repeat;
+}
+
+.footer__social .pinterest {
+    background: #F7F7F7 url("./../images/pinteres.svg") center/2rem no-repeat;
+}
+
+.footer__social .telegram {
+    background: #F7F7F7 url("./../images/telegram.svg") center/2.4rem no-repeat;
 }

@@ -37,6 +37,10 @@
       cursor: pointer;
       transition: all .3s ease-in-out;
 
+      &:hover {
+        box-shadow: 0rem 0rem 1rem $black;
+      }
+
       &:hover:after {
         content: '';
         display: block;
@@ -91,7 +95,7 @@
     width: 3rem;
     height: 3rem;
     position: absolute;
-    top: 67%;
+    top: 66%;
     transition: all .3s ease;
     cursor: pointer;
     z-index: 1;
@@ -100,7 +104,7 @@
   .arrow__left {
     border-top: 6px solid $font-grey;
     border-left: 6px solid $font-grey;
-    left: 19.4%;
+    left: 2rem;
     transform: rotate(-45deg) translateY(-50%);
     &:hover,
     &:focus {
@@ -118,7 +122,7 @@
   .arrow__right {
     border-top: 5px solid $font-grey;
     border-right: 5px solid $font-grey;
-    right: 19.4%;
+    right: 2rem;
     transform: rotate(45deg) translateY(-50%);
     &:hover,
     &:focus{

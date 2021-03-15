@@ -68,7 +68,9 @@
       background: $font-light;
       border-radius: 50%;
       color: $green-dark;
+
       transition: all .3s ease-in-out;
+
 
       &:hover {
         background-color: $orange-main;
@@ -77,6 +79,18 @@
       &:active {
         background-color: $orange-light;
       }
+    }
+    .facebook {
+      background: $font-light url("./../images/facebook.svg") center/1.5rem no-repeat;
+    }
+    .instagram {
+      background: $font-light url("./../images/instagram.svg") center/3rem no-repeat;
+    }
+    .pinterest {
+      background: $font-light url("./../images/pinteres.svg") center/2rem no-repeat;
+    }
+    .telegram {
+      background: $font-light url("./../images/telegram.svg") center/2.4rem no-repeat;
     }
   }
 }
